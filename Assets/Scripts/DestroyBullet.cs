@@ -9,7 +9,7 @@ public class DestroyBullet : MonoBehaviour
 
     void Start()
     {
-        timeToDestroy = 5.0f;
+        timeToDestroy = 2.8f;
     }
 
     void FixedUpdate()

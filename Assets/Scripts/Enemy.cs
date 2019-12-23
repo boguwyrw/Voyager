@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
         enemyRenderer = GetComponent<Renderer>();
     }
    
-    void Update()
+    void FixedUpdate()
     {
         
         restartEnemyLife = GameControl.sceneIsReloaded;
@@ -51,12 +51,6 @@ public class Enemy : MonoBehaviour
             EnemyDie();
         }
 
-
-    }
-
-    public void SetFreezeEnemy(bool freezeEnemy)
-    {
-        this.freezeEnemy = freezeEnemy;
     }
 
     public bool GetFreezeEnemy()

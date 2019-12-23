@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class GraalsCollect : MonoBehaviour
 {
-
-    public static int numberOfGoldGraal = 0;
-    public static int numberOfSilverGraal = 0;
-    public static int numberOfBrownGraal = 0;
+    
+    private int numberOfGoldGraal;
+    private int numberOfSilverGraal;
+    private int numberOfBrownGraal;
 
     public Text goldGraalNumber;
     public Text silverGraalNumber;
@@ -16,14 +16,27 @@ public class GraalsCollect : MonoBehaviour
 
     void Start()
     {
+        numberOfGoldGraal = 0;
+        numberOfSilverGraal = 0;
+        numberOfBrownGraal = 0;
         SetGoldGraalCountText();
         SetSilverGraalCountText();
         SetBrownGraalCountText();
     }
 
-    void Update()
+    public int GetNumberOfGoldGraal()
     {
-        
+        return numberOfGoldGraal;
+    }
+
+    public int GetNumberOfSilverGraal()
+    {
+        return numberOfSilverGraal;
+    }
+
+    public int GetNumberOfBrownGraal()
+    {
+        return numberOfBrownGraal;
     }
 
     void OnTriggerEnter(Collider other)

@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public Image playerHealthBackground;
     public Text playerHealthPoints;
 
-    public static int health;
+    private int health;
 
     private int healthMax = 100;
     private bool playAgain = false;
@@ -50,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
             playerHealthSlider.image.color = new Color(0, 255, 0);
         }
     }
-    
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("FirstAidKit"))
@@ -60,7 +60,6 @@ public class PlayerHealth : MonoBehaviour
                 health += 20;
             }
             other.gameObject.SetActive(false);
-            //playerHealthSlider.maxValue = health;
         }
     }
 
@@ -75,6 +74,11 @@ public class PlayerHealth : MonoBehaviour
     void SetPlayerHealthPointsText()
     {
         playerHealthPoints.text = "Health points: " + health.ToString();
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 
 }

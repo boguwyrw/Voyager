@@ -8,8 +8,8 @@ public class EnemyAttack : MonoBehaviour
     private GameObject player;
     private Vector3 enemyBulletStartPosition;
     private bool startsShooting = false;
-    private float enemyBulletSpeed = 580.0f;
-    private float fireRate = 1.2f;
+    private float enemyBulletSpeed = 800.0f;
+    private float fireRate = 0.8f;
     private float nextFire;
     private int playerHitEnemy = 0;
     private bool isEnemyFreeze = false;
@@ -54,7 +54,7 @@ public class EnemyAttack : MonoBehaviour
         targetWaypoint = waypointPath_01[targetWaypointIndex];
     }
 
-    void Update()
+    void FixedUpdate()
     {
         isEnemyFreeze = enemy.GetFreezeEnemy();
         playerHitEnemy = enemy.GetNumberOfHits();

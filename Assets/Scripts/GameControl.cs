@@ -21,13 +21,24 @@ public class GameControl : MonoBehaviour
 
     public static bool sceneIsReloaded;
 
-    private int healthPoints = 0;
-    private int goldGraals = 0;
-    private int silverGraals = 0;
-    private int brownGraals = 0;
+    private int healthPoints;
+    private int goldGraals;
+    private int silverGraals;
+    private int brownGraals;
 
+    private GraalsCollect graalsCollect;
+    private PlayerHealth playerHealthPoints;
+    
+    void Awake()
+    {
+        graalsCollect = GetComponent<GraalsCollect>();
+        playerHealthPoints = GetComponent<PlayerHealth>();
+    }
+    
     void Start()
     {
+        graalsCollect = GetComponent<GraalsCollect>();
+        playerHealthPoints = GetComponent<PlayerHealth>();
         Time.timeScale = 0;
         keysText.transform.position = new Vector3(0.075f * Screen.width, 0.925f * Screen.height, 0);
         graalsText.transform.position = new Vector3(0.925f * Screen.width, 0.925f * Screen.height, 0);
@@ -48,11 +59,10 @@ public class GameControl : MonoBehaviour
 
     void Update()
     {
-        goldGraals = GraalsCollect.numberOfGoldGraal;
-        silverGraals = GraalsCollect.numberOfSilverGraal;
-        brownGraals = GraalsCollect.numberOfBrownGraal;
-
-        healthPoints = PlayerHealth.health;
+        goldGraals = graalsCollect.GetNumberOfGoldGraal();
+        silverGraals = graalsCollect.GetNumberOfSilverGraal();
+        brownGraals = graalsCollect.GetNumberOfBrownGraal();
+        healthPoints = playerHealthPoints.GetHealth();
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
