@@ -9,7 +9,7 @@ public class PlayerCamera : MonoBehaviour
     private Transform playerBody;
     private float verticalRotation = 0.0f;
     private float horizontalRotation = 0.0f;
-    private float rotationLimit = 70.0f;
+    private float rotationLimit = 60.0f;
 
     public Camera playerCamera;
 

@@ -18,6 +18,7 @@ public class GameControl : MonoBehaviour
     public GameObject playAgainButton;
     public GameObject quitButton;
     public GameObject mapRawImage;
+    public GameObject playerPoint;
 
     public static bool sceneIsReloaded;
 
@@ -94,12 +95,14 @@ public class GameControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M))
         {
+            playerPoint.SetActive(false);
             mapRawImage.SetActive(true);
             Time.timeScale = 0;
         }
 
         if (Input.GetKeyUp(KeyCode.M))
         {
+            playerPoint.SetActive(true);
             mapRawImage.SetActive(false);
             Time.timeScale = 1;
         }
