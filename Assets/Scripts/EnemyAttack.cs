@@ -8,7 +8,7 @@ public class EnemyAttack : MonoBehaviour
     private GameObject player;
     private Vector3 enemyBulletStartPosition;
     private bool startsShooting = false;
-    private float enemyBulletSpeed = 800.0f;
+    private float enemyBulletSpeed = 1100.0f;
     private float fireRate = 0.8f;
     private float nextFire;
     private int playerHitEnemy = 0;
@@ -19,7 +19,7 @@ public class EnemyAttack : MonoBehaviour
     public Rigidbody enemyBullet;
 
     // Enemy Find Player
-    private float viewAngle = 130.0f;
+    private float viewAngle = 150.0f;
 
     public LayerMask playerMask;
     public LayerMask solidElementsMask;
@@ -29,8 +29,8 @@ public class EnemyAttack : MonoBehaviour
     private int targetWaypointIndex = 0;
     private int lastWaypointIndex;
     private float minimumDistance = 0.05f;
-    private float movementSpeed = 4.0f;
-    private float rotationSpeed = 5.0f;
+    private float movementSpeed = 5.0f;
+    private float rotationSpeed = 10.0f;
     private float enemyRange = 0.0f;
     private SphereCollider enemySphereCollider;
 

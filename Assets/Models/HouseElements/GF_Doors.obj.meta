@@ -26,6 +26,7 @@ ModelImporter:
     100040: Door_GF21
     100042: Door_GF22
     100044: //RootNode
+    100046: MainDoorGroundFloor
     400000: Door_GF01
     400002: Door_GF02
     400004: Door_GF03
@@ -49,6 +50,7 @@ ModelImporter:
     400040: Door_GF21
     400042: Door_GF22
     400044: //RootNode
+    400046: MainDoorGroundFloor
     2100000: Door_GF01Mat
     2100002: Door_GF02Mat
     2100004: Door_GF03Mat
@@ -71,6 +73,7 @@ ModelImporter:
     2100038: Door_GF20Mat
     2100040: Door_GF21Mat
     2100042: Door_GF22Mat
+    2100044: MainDoorGroundFloorMat
     2300000: Door_GF01
     2300002: Door_GF02
     2300004: Door_GF03
@@ -93,6 +96,7 @@ ModelImporter:
     2300038: Door_GF20
     2300040: Door_GF21
     2300042: Door_GF22
+    2300044: MainDoorGroundFloor
     3300000: Door_GF01
     3300002: Door_GF02
     3300004: Door_GF03
@@ -115,6 +119,7 @@ ModelImporter:
     3300038: Door_GF20
     3300040: Door_GF21
     3300042: Door_GF22
+    3300044: MainDoorGroundFloor
     4300000: Door_GF01
     4300002: Door_GF02
     4300004: Door_GF03
@@ -137,6 +142,7 @@ ModelImporter:
     4300038: Door_GF20
     4300040: Door_GF21
     4300042: Door_GF22
+    4300044: MainDoorGroundFloor
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -26,6 +26,7 @@ ModelImporter:
     100040: Door_B20
     100042: Door_B21
     100044: Door_B22
+    100046: MainDoorBasement
     400000: //RootNode
     400002: Door_B01
     400004: Door_B02
@@ -49,6 +50,7 @@ ModelImporter:
     400040: Door_B20
     400042: Door_B21
     400044: Door_B22
+    400046: MainDoorBasement
     2100000: Door_B01Mat
     2100002: Door_B02Mat
     2100004: Door_B03Mat
@@ -71,6 +73,7 @@ ModelImporter:
     2100038: Door_B20Mat
     2100040: Door_B21Mat
     2100042: Door_B22Mat
+    2100044: MainDoorBasementMat
     2300000: Door_B01
     2300002: Door_B02
     2300004: Door_B03
@@ -93,6 +96,7 @@ ModelImporter:
     2300038: Door_B20
     2300040: Door_B21
     2300042: Door_B22
+    2300044: MainDoorBasement
     3300000: Door_B01
     3300002: Door_B02
     3300004: Door_B03
@@ -115,6 +119,7 @@ ModelImporter:
     3300038: Door_B20
     3300040: Door_B21
     3300042: Door_B22
+    3300044: MainDoorBasement
     4300000: Door_B01
     4300002: Door_B02
     4300004: Door_B03
@@ -137,6 +142,7 @@ ModelImporter:
     4300038: Door_B20
     4300040: Door_B21
     4300042: Door_B22
+    4300044: MainDoorBasement
   externalObjects: {}
   materials:
     importMaterials: 1
